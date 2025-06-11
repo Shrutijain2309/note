@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Did You Forgive Me? 💖</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #ffd6e8, #ffe4e1);
+      color: #333;
+      text-align: center;
+      padding: 50px;
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: #ff1493;
+      margin-bottom: 30px;
+    }
+
+    button {
+      padding: 12px 25px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      margin: 10px;
+      transition: all 0.3s ease;
+    }
+
+    #yesBtn {
+      background-color: #32cd32;
+      color: white;
+    }
+
+    #noBtn {
+      background-color: #dc143c;
+      color: white;
+      position: relative;
+    }
+
+    #forgiveYes {
+      display: none;
+      margin-top: 40px;
+    }
+
+    #forgiveYes img {
+      max-width: 200px;
+    }
+
+    @keyframes dance {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Did you forgive me? 🙈</h2>
+  <button id="yesBtn" onclick="showTeddy()">Yes 💚</button>
+  <button id="noBtn">No 💔</button>
+
+  <div id="forgiveYes">
+    <h2>I Love You So Much! 💘</h2>
+    <img src="dance.gif" alt="Cute Teddy" />
+    <p style="font-size: 1.5rem; color: #ff1493;">💕 You made my heart dance again! 💃</p>
+  </div>
+
+  <script>
+    function showTeddy() {
+      document.getElementById('forgiveYes').style.display = 'block';
+    }
+
+    const noBtn = document.getElementById("noBtn");
+    noBtn.addEventListener("mouseover", () => {
+      const x = Math.floor(Math.random() * (window.innerWidth - 150));
+      const y = Math.floor(Math.random() * (window.innerHeight - 100));
+      noBtn.style.position = "absolute";
+      noBtn.style.left = `${x}px`;
+      noBtn.style.top = `${y}px`;
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>I'm Sorry, My Love 💖</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Open Sans', sans-serif;
+      background: linear-gradient(120deg, #ffc0cb, #ffe4e1);
+      color: #333;
+      overflow-x: hidden;
+    }
+    header {
+      text-align: center;
+      padding: 50px 20px;
+      animation: fadeIn 2s ease-in-out;
+    }
+    header h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: 3rem;
+      color: #ff1493;
+    }
+    .heart {
+      font-size: 2rem;
+      animation: heartbeat 3s infinite;
+      color: red;
+    }
+    .note {
+      max-width: 700px;
+      margin: 20px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      animation: fadeInUp 2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;} to {opacity: 1;}
+    }
+    @keyframes fadeInUp {
+      from {transform: translateY(30px); opacity: 0;} to {transform: translateY(0); opacity: 1;}
+    }
+    @keyframes heartbeat {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.3); }
+    }
+    @keyframes floaty {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+      100% { transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>I’m So Sorry, My Love 💖</h1>
+    <div class="heart">❤️❤️❤️</div>
+  </header>
+
+  <div class="note">
+    <p>My dearest love,</p>
+    <p>Sowwiieee baby🐣 <br>
+        I know you are struggling a lot there and stupid me stressed you out a lot more than that college is. I might have overreacted but deep down I know how much I needed you. Despite this much work pressure, you are still taking time to talk to me and understand me. You are doing a great work baby and I want you to know that no matter how hard it gets I am still here loving you even more with the passing days. We'll get stronger and better sweetheart. <br>
+        Don't you worry baby, everything will fall into place eventually. I am so proud of you my love for everything that you are doing and handling with such grace. And no, you are not at all alone there honey. <br>Always remember your family and I are here to support you always. 
+        Make every assignment count and ace this battle, my world.<br><br>
+        I love you to the moon and back🌕❤✨ </p>
+    <p>Forever yours,<br><strong>Pigguu 💌💕</strong></p>
+  </div>
+
+  <div style="text-align: center; margin-top: 40px;">
+    <button onclick="window.location.href='forgive.html'" 
+            style="padding: 12px 25px; font-size: 1rem; border-radius: 15px; background-color: #ff69b4; color: white; border: none; cursor: pointer;">
+      Click for a Surprise ✨
+    </button>
+  </div> <br><br><br><br>
+  <script>
+    function showSurprise() {
+      document.getElementById('surprise').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
